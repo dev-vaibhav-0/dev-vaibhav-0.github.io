@@ -254,5 +254,34 @@
 			});
 
 		}
+// Custom Formspree success handler
+$('#contact-form').on('submit', function (e) {
+	e.preventDefault();
+
+	var $form = $(this);
+	var $submitButton = $form.find('input[type="submit"]');
+	var $successMessage = $('#form-success');
+
+	$submitButton.prop('disabled', true);
+
+	$.ajax({
+		url: $form.attr('action'),
+		method: 'POST',
+		data: $form.serialize(),
+		dataType: 'json',
+		headers: {
+			'Accept': 'application/json'
+		},
+		success: function () {
+			$form[0].reset();
+			$successMessage.fadeIn();
+			$submitButton.prop('disabled', false);
+		},
+		error: function () {
+			alert('Oops! Something went wrong. Please try again.');
+			$submitButton.prop('disabled', false);
+		}
+	});
+});
 
 })(jQuery);
