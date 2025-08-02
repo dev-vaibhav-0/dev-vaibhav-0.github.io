@@ -278,19 +278,5 @@ $('#contact-form').on('submit', function (e) {
 		}
 	});
 });
-$(document).ready(function() {
-  // Get today's date
-  const today = new Date();
-
-  // Format it (you can change the format as needed)
-  const formatted = today.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
-
-  // Display it in the page
-  $("#today-date").text(formatted);
-});
-
 })(jQuery);
+
