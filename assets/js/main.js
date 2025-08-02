@@ -1,8 +1,3 @@
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 (function($) {
 
@@ -264,7 +259,7 @@ $('#contact-form').on('submit', function (e) {
 
 	$submitButton.prop('disabled', true);
 
-	$.ajax({
+	$.ajax
 		url: $form.attr('action'),
 		method: 'POST',
 		data: $form.serialize(),
@@ -282,6 +277,20 @@ $('#contact-form').on('submit', function (e) {
 			$submitButton.prop('disabled', false);
 		}
 	});
+});
+$(document).ready(function() {
+  // Get today's date
+  const today = new Date();
+
+  // Format it (you can change the format as needed)
+  const formatted = today.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
+  // Display it in the page
+  $("#today-date").text(formatted);
 });
 
 })(jQuery);
