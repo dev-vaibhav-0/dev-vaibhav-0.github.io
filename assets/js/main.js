@@ -259,7 +259,7 @@ $('#contact-form').on('submit', function (e) {
 
 	$submitButton.prop('disabled', true);
 
-	$.ajax
+	$.ajax({
 		url: $form.attr('action'),
 		method: 'POST',
 		data: $form.serialize(),
@@ -279,4 +279,5 @@ $('#contact-form').on('submit', function (e) {
 	});
 });
 })(jQuery);
+
 
