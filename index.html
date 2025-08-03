@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhav Kumar</title>
-    <link rel="icon" href="Wheel_of_Fortune_Symbol2.png" type="image/png">
+    <title>Portfolio - Creative Developer</title>
     <style>
         * {
             margin: 0;
@@ -139,19 +138,6 @@
             align-items: center;
             max-width: 1400px;
             margin: 0 auto;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .logo-img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            object-fit: cover;
         }
 
         .logo {
@@ -565,17 +551,6 @@
             color: var(--text-dark);
         }
 
-        .skill-description {
-            margin-bottom: 1rem;
-            color: var(--text-light);
-            opacity: 0.8;
-        }
-
-        body[data-theme="light"] .skill-description {
-            color: var(--text-dark);
-            opacity: 0.9;
-        }
-
         .skill-level {
             width: 100%;
             height: 8px;
@@ -712,15 +687,6 @@
             height: 250px;
             overflow: hidden;
             position: relative;
-            background: rgba(139, 92, 246, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .project-placeholder {
-            font-size: 3rem;
-            color: rgba(139, 92, 246, 0.3);
         }
 
         .project-image img {
@@ -801,7 +767,6 @@
             font-weight: 600;
             transition: all 0.3s ease;
             display: inline-block;
-            cursor: pointer;
         }
 
         .project-link:hover {
@@ -992,10 +957,7 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo-container">
-                <img src="Wheel_of_Fortune_Symbol2.png" alt="Logo" class="logo-img">
-                <div class="logo">Vaibhav Kumar</div>
-            </div>
+            <div class="logo">Portfolio</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -1021,8 +983,8 @@
         </div>
         
         <div class="hero-content">
-            <h1>Vaibhav Kumar</h1>
-            <p class="hero-subtitle">Aspiring Data Scientist & Data Analyst</p>
+            <h1>Creative Developer</h1>
+            <p class="hero-subtitle">Crafting Digital Experiences with Code & Design</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -1040,14 +1002,14 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>I'm a passionate student currently learning Python and aspiring to become a Data Scientist and Data Analyst. With a strong foundation in programming and data analysis, I'm developing the skills necessary to extract meaningful insights from complex datasets.</p>
+                <p>I'm a passionate full-stack developer with a keen eye for design and a love for creating innovative digital solutions. With expertise in modern web technologies, I bring ideas to life through clean code and stunning visuals.</p>
                 <br>
-                <p>My journey in data science has led me to explore various tools and technologies that help in data visualization, statistical analysis, and machine learning. I believe in the power of data to transform decision-making and drive innovation across industries.</p>
+                <p>My journey in web development has led me to work on diverse projects, from responsive websites to complex web applications. I believe in the power of technology to transform ideas into reality and create meaningful user experiences.</p>
                 <br>
-                <p>When I'm not coding or analyzing data, you can find me exploring new datasets, participating in data science competitions, or sharing knowledge with the data science community.</p>
+                <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or sharing knowledge with the developer community.</p>
             </div>
             <div class="about-image">
-                <img src="https://picsum.photos/seed/vaibhav/600/400.jpg" alt="Vaibhav Kumar">
+                <img src="https://picsum.photos/seed/developer/600/400.jpg" alt="Developer">
             </div>
         </div>
     </section>
@@ -1057,51 +1019,35 @@
         <h2 class="section-title">Skills & Expertise</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <div class="skill-icon">🤖</div>
-                <h3 class="skill-name">Machine Learning</h3>
-                <p class="skill-description">Supervised & Unsupervised Learning</p>
+                <div class="skill-icon">🎨</div>
+                <h3 class="skill-name">Frontend Development</h3>
+                <p>HTML, CSS, JavaScript, React, Vue</p>
+                <div class="skill-level">
+                    <div class="skill-progress" data-skill="90"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚙️</div>
+                <h3 class="skill-name">Backend Development</h3>
+                <p>Node.js, Python, MongoDB, SQL</p>
                 <div class="skill-level">
                     <div class="skill-progress" data-skill="85"></div>
                 </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon">🗃️</div>
-                <h3 class="skill-name">SQL</h3>
-                <p class="skill-description">Database Querying & Management</p>
+                <div class="skill-icon">📱</div>
+                <h3 class="skill-name">UI/UX Design</h3>
+                <p>Figma, Adobe XD, Prototyping</p>
                 <div class="skill-level">
                     <div class="skill-progress" data-skill="80"></div>
                 </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon">📊</div>
-                <h3 class="skill-name">Tableau</h3>
-                <p class="skill-description">Data Visualization & Dashboards</p>
+                <div class="skill-icon">☁️</div>
+                <h3 class="skill-name">Cloud & DevOps</h3>
+                <p>AWS, Docker, CI/CD, Git</p>
                 <div class="skill-level">
                     <div class="skill-progress" data-skill="75"></div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🔧</div>
-                <h3 class="skill-name">Scikit-learn</h3>
-                <p class="skill-description">ML Library for Python</p>
-                <div class="skill-level">
-                    <div class="skill-progress" data-skill="80"></div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">📈</div>
-                <h3 class="skill-name">Power BI</h3>
-                <p class="skill-description">Business Analytics & Reporting</p>
-                <div class="skill-level">
-                    <div class="skill-progress" data-skill="70"></div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🐍</div>
-                <h3 class="skill-name">Python</h3>
-                <p class="skill-description">Programming & Data Analysis</p>
-                <div class="skill-level">
-                    <div class="skill-progress" data-skill="90"></div>
                 </div>
             </div>
         </div>
@@ -1112,107 +1058,90 @@
         <h2 class="section-title">My Goals</h2>
         <div class="goals-grid">
             <div class="goal-card">
-                <div class="goal-icon">🎓</div>
-                <h3 class="goal-title">Master Data Science</h3>
-                <p class="goal-description">Develop expertise in advanced data science techniques and become proficient in extracting insights from complex datasets.</p>
+                <div class="goal-icon">🚀</div>
+                <h3 class="goal-title">Innovation</h3>
+                <p class="goal-description">Push the boundaries of web development by creating cutting-edge solutions that solve real-world problems and enhance user experiences.</p>
             </div>
             <div class="goal-card">
-                <div class="goal-icon">💼</div>
-                <h3 class="goal-title">Industry Experience</h3>
-                <p class="goal-description">Gain practical experience by working on real-world data science projects and collaborating with industry professionals.</p>
+                <div class="goal-icon">🌍</div>
+                <h3 class="goal-title">Impact</h3>
+                <p class="goal-description">Build applications that make a positive difference in people's lives and contribute to the advancement of technology.</p>
             </div>
             <div class="goal-card">
                 <div class="goal-icon">📚</div>
-                <h3 class="goal-title">Continuous Learning</h3>
-                <p class="goal-description">Stay updated with the latest trends and technologies in data science and continuously expand my knowledge base.</p>
+                <h3 class="goal-title">Growth</h3>
+                <p class="goal-description">Continuously learn and master new technologies, staying at the forefront of the ever-evolving tech landscape.</p>
             </div>
             <div class="goal-card">
-                <div class="goal-icon">🏆</div>
-                <h3 class="goal-title">Competitions</h3>
-                <p class="goal-description">Participate in data science competitions to test my skills and learn from the global data science community.</p>
+                <div class="goal-icon">🤝</div>
+                <h3 class="goal-title">Collaboration</h3>
+                <p class="goal-description">Work with diverse teams and contribute to open-source projects, fostering innovation through collective knowledge.</p>
             </div>
             <div class="goal-card">
-                <div class="goal-icon">🌐</div>
-                <h3 class="goal-title">Contribute to Open Source</h3>
-                <p class="goal-description">Contribute to open-source data science projects and share my knowledge with the community.</p>
+                <div class="goal-icon">🎯</div>
+                <h3 class="goal-title">Excellence</h3>
+                <p class="goal-description">Deliver high-quality, scalable, and maintainable code that sets industry standards and inspires others.</p>
             </div>
             <div class="goal-card">
-                <div class="goal-icon">🚀</div>
-                <h3 class="goal-title">Career Growth</h3>
-                <p class="goal-description">Build a successful career as a data scientist and make meaningful contributions to organizations through data-driven insights.</p>
+                <div class="goal-icon">💡</div>
+                <h3 class="goal-title">Creativity</h3>
+                <p class="goal-description">Merge technical expertise with creative design to build beautiful, intuitive, and engaging digital experiences.</p>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section class="projects animate-on-scroll" id="projects">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-image">
-                    <div class="project-placeholder">📊</div>
+                    <img src="https://picsum.photos/seed/project1/400/250.jpg" alt="Project 1" class="parallax-img">
                     <div class="project-overlay">
-                        <div class="project-link">View Project</div>
+                        <a href="https://example.com/project1" target="_blank" class="project-link">View Project</a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3 class="project-title">Data Analysis Project</h3>
-                    <p class="project-description">A comprehensive data analysis project exploring trends and patterns in a real-world dataset.</p>
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-description">A modern e-commerce solution with real-time inventory management and seamless payment integration.</p>
                     <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Pandas</span>
-                        <span class="tag">Visualization</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
                     </div>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <div class="project-placeholder">🤖</div>
+                    <img src="https://picsum.photos/seed/project2/400/250.jpg" alt="Project 2" class="parallax-img">
                     <div class="project-overlay">
-                        <div class="project-link">View Project</div>
+                        <a href="https://example.com/project2" target="_blank" class="project-link">View Project</a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3 class="project-title">Machine Learning Model</h3>
-                    <p class="project-description">Implementation of a machine learning algorithm to solve a specific classification or regression problem.</p>
+                    <h3 class="project-title">Task Management App</h3>
+                    <p class="project-description">Collaborative task management tool with real-time updates and team collaboration features.</p>
                     <div class="project-tags">
-                        <span class="tag">Scikit-learn</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">ML</span>
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Tailwind</span>
                     </div>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <div class="project-placeholder">📈</div>
+                    <img src="https://picsum.photos/seed/project3/400/250.jpg" alt="Project 3" class="parallax-img">
                     <div class="project-overlay">
-                        <div class="project-link">View Project</div>
+                        <a href="https://example.com/project3" target="_blank" class="project-link">View Project</a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <h3 class="project-title">Data Visualization Dashboard</h3>
-                    <p class="project-description">Interactive dashboard created to visualize complex data and provide actionable insights.</p>
+                    <h3 class="project-title">Analytics Dashboard</h3>
+                    <p class="project-description">Data visualization dashboard with interactive charts and real-time analytics for business insights.</p>
                     <div class="project-tags">
-                        <span class="tag">Tableau</span>
-                        <span class="tag">Power BI</span>
-                        <span class="tag">Dashboard</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="project-placeholder">🗃️</div>
-                    <div class="project-overlay">
-                        <div class="project-link">View Project</div>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3 class="project-title">Database Project</h3>
-                    <p class="project-description">Design and implementation of a database system with complex queries and data management.</p>
-                    <div class="project-tags">
-                        <span class="tag">SQL</span>
-                        <span class="tag">Database</span>
+                        <span class="tag">D3.js</span>
                         <span class="tag">Python</span>
+                        <span class="tag">PostgreSQL</span>
                     </div>
                 </div>
             </div>
@@ -1223,7 +1152,7 @@
     <section class="contact animate-on-scroll" id="contact">
         <div class="contact-container">
             <h2 class="section-title">Get In Touch</h2>
-            <p>Have a project in mind or want to collaborate? Feel free to reach out!</p>
+            <p>Have a project in mind? Let's work together to bring your ideas to life!</p>
             <form class="contact-form" onsubmit="handleSubmit(event)">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -1245,13 +1174,23 @@
     <!-- Footer -->
     <footer>
         <div class="social-links">
-            <a href="https://github.com" target="_blank" aria-label="GitHub">
+            <a href="#" aria-label="GitHub">
                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                 </svg>
             </a>
+            <a href="#" aria-label="LinkedIn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+            </a>
         </div>
-        <p>&copy; 2024 Vaibhav Kumar. All rights reserved.</p>
+        <p>&copy; 2024 Creative Developer. All rights reserved.</p>
     </footer>
 
     <script>
@@ -1351,7 +1290,7 @@
         // Animate on Scroll
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px"
+            rootMargin: '0px 0px -100px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
