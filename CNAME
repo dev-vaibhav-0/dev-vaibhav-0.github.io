@@ -1,1 +1,4 @@
-vaibhav.owns.it.com
+Type:   CNAME
+Name:   vaibhav
+Value:  dev-vaibhav-0.github.io
+TTL:    auto
