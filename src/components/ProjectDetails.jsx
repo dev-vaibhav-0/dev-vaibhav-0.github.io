@@ -1,6 +1,12 @@
 import { motion } from "motion/react";
 
 const ProjectDetails = ({ closeModal, title, description, subDescription, image, tags, href }) => {
+  // Open external links safely, SPA won't hijack
+  const openExternal = (url) => {
+    if (!url) return;
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
       <motion.div
@@ -22,14 +28,16 @@ const ProjectDetails = ({ closeModal, title, description, subDescription, image,
           <p className="mb-3 font-normal text-neutral-400">{description}</p>
 
           {subDescription.map((subDesc, index) => (
-            <p key={index} className="mb-3 font-normal text-neutral-400">{subDesc}</p>
+            <p key={index} className="mb-3 font-normal text-neutral-400">
+              {subDesc}
+            </p>
           ))}
 
           <div className="flex items-center justify-between mt-4">
             <div className="flex gap-3">
               {tags.map((tag) => (
                 <img
-                  key={tag.id}
+                  key={`${tag.id}-${title}`} // unique across projects
                   src={tag.path}
                   alt={tag.name}
                   className="rounded-lg size-10 hover-animation"
@@ -37,14 +45,13 @@ const ProjectDetails = ({ closeModal, title, description, subDescription, image,
               ))}
             </div>
 
-            <a
+            {/* SPA-safe external link */}
+            <button
               className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={() => openExternal(href)}
             >
               View Project <img src="assets/arrow-up.svg" alt="arrow icon" className="size-4" />
-            </a>
+            </button>
           </div>
         </div>
       </motion.div>
