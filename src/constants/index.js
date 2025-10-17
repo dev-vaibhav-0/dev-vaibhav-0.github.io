@@ -10,7 +10,7 @@ export const myProjects = [
       "Designed a responsive frontend with Flet, enhancing user experience.",
       "Added Areas for functionality improvements.",
     ],
-    href: "",
+    href: "https://github.com/dev-vaibhav-0/NLP-APP",
     logo: "",
     image: "/assets/projects/NLPAPP.png",
     tags: [
@@ -36,7 +36,7 @@ export const myProjects = [
       "Implemented OnClick Enumeration",
       "Developed a python-based frontend with Flet for a sleek user experience.",
     ],
-    href: "",
+    href: "https://github.com/dev-vaibhav-0/iOS-Calculator",
     logo: "",
     image: "/assets/projects/Calculator.png",
     tags: [
