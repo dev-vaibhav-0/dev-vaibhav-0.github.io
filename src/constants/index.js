@@ -36,6 +36,39 @@ export const myProjects = [
       { id: 202, name: "Flet", path: "/assets/logos/Flet.png" },
     ],
   },
+    {
+    id: 3,
+    title: "Random Wallpaper Chooser",
+    description: "Chooses a Random Wallpaper for you",
+    subDescription: [
+      "Integrated API from website",
+      "Implemented Grayscale Images",
+      "Developed a Python-based backend",
+    ],
+    href: "https://github.com/dev-vaibhav-0/Random-Wallpaper-Chooser",
+    logo: "",
+    image: "/assets/projects/random-wallpaper.png",
+    tags: [
+      { id: 201, name: "Python", path: "/assets/logos/Python.jpg" },
+    ],
+  },
+    {
+    id: 3,
+    title: "Gremlin",
+    description: "A Terminal CPU and RAM Analyser",
+    subDescription: [
+      "Implemented Fantastic behavior",
+      "Fast",
+      "Developed a Python-based backend",
+    ],
+    href: "https://github.com/dev-vaibhav-0/Gremlin",
+    logo: "",
+    image: "/assets/projects/gremlin.png",
+    tags: [
+      { id: 201, name: "Python", path: "/assets/logos/Python.jpg" },
+      { id: 202, name: "psutils", path: "/assets/logos/psutil.png" },
+    ],
+  },
 ];
 
 export const mySocials = [
